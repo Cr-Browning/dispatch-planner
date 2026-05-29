@@ -1,0 +1,41 @@
+# Secrets and local config
+**/.env
+!**/.env.example
+
+# Python
+*.pyc
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Local data and generated artifacts
+data/*.db
+data/*.db-*
+data/e2e-smoke.db
+data/e2e-smoke.db-*
+data/e2e-test-seed.db
+data/e2e-test-seed.db-*
+backups/*
+!backups/.gitkeep
+exports/*
+!exports/.gitkeep
+
+# Playwright
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/
+
+# OS / logs
+*.log
+.DS_Store
