@@ -39,7 +39,7 @@ cp .env.example .env
 
 Edit `backend/.env`:
 
-- `APP_SECRET_KEY` — any long random string for JWT signing
+- `APP_SECRET_KEY` — any long random string for JWT signing: openssl rand -hex 32p
 - `DISPATCHER_PASSWORD` — password used to sign in to the UI and API
 
 ### 2. Database and seed data
